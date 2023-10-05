@@ -2,10 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PointCounter : MonoBehaviour
+public class PointManager : MonoBehaviour
 {
     public int Points = 0;
-
+    
     // Start is called before the first frame update
     void Start()
     {
