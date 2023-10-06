@@ -6,15 +6,18 @@ using UnityEngine;
 public class BuyButtonScript : MonoBehaviour
 {
     //Scripts
-    PointManager pointManger;
-    ShopSystem shopsystem;
+    PointManager pm;
     //ItemID
     public int ItemID;
+    //truefalse
+    bool bought1;
+    bool bought2;
+    bool bought3;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        pm = FindObjectOfType<PointManager>();
     }
 
     // Update is called once per frame
@@ -26,22 +29,20 @@ public class BuyButtonScript : MonoBehaviour
     {
         if (other.gameObject.name == "Hands")
         {
-            if(ItemID == 1 && GetComponent<PointManager>().Points < 10)
+            if(ItemID == 1 && pm.Points >= 10 && bought1 == false)
             {
-                GetComponent<PointManager>().Points -= 10;
+                pm.Points -= 10;
                 Debug.Log("A");
             }
-            else if (ItemID == 2 && GetComponent<PointManager>().Points < 15)
+            else if (ItemID == 2 && pm.Points >= 15)
             {
-                GetComponent<PointManager>().Points -= 15;
+                pm.Points -= 15;
             }
-            else if (ItemID == 3 && GetComponent<PointManager>().Points < 30) 
+            else if (ItemID == 3 && pm.Points >= 30) 
             {
-                GetComponent<PointManager>().Points -= 30;
+                pm.Points -= 30;
             }
         }
-        
-            
         
     }
 }

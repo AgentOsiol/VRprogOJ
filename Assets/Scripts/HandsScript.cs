@@ -6,19 +6,20 @@ public class HandsScript : MonoBehaviour
 {
 
     //Scripts
-    PointManager pointManger;
-    ShopSystem shopsystem;
+    PointManager pm;
+    BuyButtonScript bts;
     // Start is called before the first frame update
     void Start()
     {
-        
+        pm = FindObjectOfType<PointManager>();
+        bts = FindObjectOfType<BuyButtonScript>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        GetComponent<PointManager>().Points = pointManger.Points;
-
+        FindObjectOfType<PointManager>().Points = pm.Points;
+        FindObjectOfType<BuyButtonScript>().ItemID = bts.ItemID;
 
     }
 }
