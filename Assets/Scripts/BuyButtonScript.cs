@@ -24,7 +24,7 @@ public class BuyButtonScript : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.name == "Basketball")
+        if (other.gameObject.name == "Hands")
         {
             if(ItemID == 1 && GetComponent<PointManager>().Points < 10)
             {
