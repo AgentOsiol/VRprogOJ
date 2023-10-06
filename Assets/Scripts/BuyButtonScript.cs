@@ -18,6 +18,9 @@ public class BuyButtonScript : MonoBehaviour
     void Start()
     {
         pm = FindObjectOfType<PointManager>();
+        bought1 = false;
+        bought2 = false;
+        bought3 = false;
     }
 
     // Update is called once per frame
@@ -33,14 +36,19 @@ public class BuyButtonScript : MonoBehaviour
             {
                 pm.Points -= 10;
                 Debug.Log("A");
+                bought1 = true;
             }
-            else if (ItemID == 2 && pm.Points >= 15)
+            else if (ItemID == 2 && pm.Points >= 15 && bought2 == false)
             {
                 pm.Points -= 15;
+                Debug.Log("B");
+                bought2 = true;
             }
-            else if (ItemID == 3 && pm.Points >= 30) 
+            else if (ItemID == 3 && pm.Points >= 30 && bought3 == false)
             {
                 pm.Points -= 30;
+                Debug.Log("C");
+                bought3 = true;
             }
         }
         
