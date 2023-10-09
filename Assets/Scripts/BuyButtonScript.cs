@@ -51,7 +51,6 @@ public class BuyButtonScript : MonoBehaviour
                 bought3 = true;
             }
         }
-        
     }
 }
 

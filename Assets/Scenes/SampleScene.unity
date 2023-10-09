@@ -1978,7 +1978,7 @@ GameObject:
   - component: {fileID: 1903984938}
   - component: {fileID: 1903984937}
   m_Layer: 0
-  m_Name: Point
+  m_Name: ParticleSystem
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3077,12 +3077,12 @@ ParticleSystem:
           outWeight: 0.33333334
         - serializedVersion: 3
           time: 0.49723738
-          value: 0.41662815
-          inSlope: -2.7868853
-          outSlope: -2.7868853
+          value: 0.3625741
+          inSlope: -2.537749
+          outSlope: -2.537749
           tangentMode: 0
           weightedMode: 0
-          inWeight: 0.33333334
+          inWeight: 0.41947296
           outWeight: 0.20947354
         - serializedVersion: 3
           time: 1
