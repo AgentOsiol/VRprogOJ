@@ -6,10 +6,12 @@ public class BasketballScript : MonoBehaviour
 {
     MeshRenderer mr;
     SphereCollider sc;
+    ParticleSystem ps;
     void Start()
     {
         mr = GetComponent<MeshRenderer>();
         sc = GetComponent<SphereCollider>();
+        ps = GetComponent<ParticleSystem>();
     }
     private void OnTriggerEnter(Collider other)
   {
@@ -19,6 +21,7 @@ public class BasketballScript : MonoBehaviour
             //components
             mr.enabled = false;
             sc.enabled = false;
+            ps.Play();
         }
    }
 
