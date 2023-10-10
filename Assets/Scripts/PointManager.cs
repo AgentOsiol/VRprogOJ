@@ -19,7 +19,7 @@ public class PointManager : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.name == "Basketball" && !other.attachedRigidbody.isKinematic)
+        if (other.CompareTag("ball") && !other.attachedRigidbody.isKinematic)
         {
             Points += 1;
             Debug.Log(Points);

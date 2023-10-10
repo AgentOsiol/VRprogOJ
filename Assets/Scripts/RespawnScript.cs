@@ -4,15 +4,15 @@ using UnityEngine;
 
 public class RespawnScript : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public GameObject basketball;
 
     // Update is called once per frame
     void Update()
     {
-        
+        GameObject basketballExists = GameObject.Find("Basketball(Clone)");
+        if (basketballExists == null)
+        {
+            Instantiate(basketball, transform.position, Quaternion.identity);
+        }
     }
 }
