@@ -12,11 +12,6 @@ public class PointManager : MonoBehaviour
         Points = 0;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("ball") && !other.attachedRigidbody.isKinematic)

@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class HandsScript : MonoBehaviour
 {
-
     //Scripts
     PointManager pm;
     BuyButtonScript bts;
@@ -20,6 +19,5 @@ public class HandsScript : MonoBehaviour
     {
         FindObjectOfType<PointManager>().Points = pm.Points;
         FindObjectOfType<BuyButtonScript>().ItemID = bts.ItemID;
-
     }
 }
