@@ -25,7 +25,7 @@ public class BuyButtonScript : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.name == "Hands")
+        if (other.gameObject.tag == "Hands")
         {
             if(ItemID == 1 && pm.Points >= 10 && bought1 == false)
             {

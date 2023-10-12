@@ -15,6 +15,8 @@ public class BasketballScript : MonoBehaviour
         sc = GetComponent<SphereCollider>();
         ps = GetComponentInChildren<ParticleSystem>();
         rb = GetComponent<Rigidbody>();
+        Physics.gravity = new Vector3(0, -5, 0);
+
     }
     private void OnTriggerEnter(Collider other)
     {
