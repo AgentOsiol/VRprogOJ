@@ -22,7 +22,7 @@ public class BasketballScript : MonoBehaviour
     {
         if(other.gameObject.name == "PointDetector")
         {
-            StartCoroutine(Db(3f));
+            StartCoroutine(Db(2f));
             //components
             mr.enabled = false;
             sc.isTrigger = true;
