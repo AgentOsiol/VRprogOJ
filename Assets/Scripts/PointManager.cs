@@ -20,5 +20,4 @@ public class PointManager : MonoBehaviour
             Debug.Log(Points);
         }
     }
-
 }
