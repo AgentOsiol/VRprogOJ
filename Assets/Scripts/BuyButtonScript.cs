@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEditor.Experimental.GraphView;
 using UnityEngine;
+using UnityEngine.XR.Interaction.Toolkit;
 
 public class BuyButtonScript : MonoBehaviour
 {
@@ -23,10 +24,8 @@ public class BuyButtonScript : MonoBehaviour
         bought3 = false;
     }
 
-    private void OnTriggerEnter(Collider other)
+    public void test()
     {
-        if (other.gameObject.tag == "Hands")
-        {
             if(ItemID == 1 && pm.Points >= 10 && bought1 == false)
             {
                 pm.Points -= 10;
@@ -45,7 +44,5 @@ public class BuyButtonScript : MonoBehaviour
                 Debug.Log("C");
                 bought3 = true;
             }
-        }
     }
 }
-
