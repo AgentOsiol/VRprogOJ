@@ -6,6 +6,7 @@ TagManager:
   tags:
   - ball
   - Hands
+  - cap
   layers:
   - Default
   - TransparentFX
